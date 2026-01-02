@@ -7,8 +7,8 @@ from astrbot.api import logger  # 可选，用于日志
     name="weather",
     author="qq529",
     description="查询天气信息，使用 suyanw.cn API",
-    version="1.0.0",
-    repo="https://github.com/qq529/astrbot_plugin_tq"  # 改成您的仓库地址
+    version="1.0.1",
+    repo="https://github.com/qq529/astrbot-plugin-weather"
 )
 class Main(Star):  # 类名可以是 Main 或 WeatherPlugin 等
     def __init__(self, context: Context):

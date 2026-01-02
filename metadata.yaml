@@ -1,5 +1,5 @@
 name: weather
-author: YourName
+author: qq529
 description: 查询天气信息，使用 suyanw.cn API
-version: 1.0.0
-repo: https://github.com/YourUsername/astrbot_plugin_weather
+version: 1.0.1
+repo: https://github.com/qq529/astrbot-plugin-weather
