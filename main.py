@@ -4,17 +4,17 @@ from astrbot.api.star import Context, Star, register
 from astrbot.api import logger
 
 @register(
-    "weather",                                      # 插件名
-    "qq529",                                        # 作者
-    "查询实时天气和生活指数，使用 suyanw.cn 免费 API",  # 描述
-    "1.0.0",                                        # 版本
-    "https://github.com/qq529/astrbot_plugin_weather.git"  # 您的仓库地址（可选，但建议填）
+    "weather",
+    "qq529",
+    "查询实时天气和生活指数，使用 suyanw.cn 免费 API",
+    "1.0.1",
+    "https://github.com/qq529/astrbot-plugin-weather"
 )
 class Main(Star):
     def __init__(self, context: Context):
         super().__init__(context)
 
-        @filter.command("weather", aliases=["天气", "wq"])  # 支持 weather / 天气 / wq + 城市
+        @filter.command("weather", aliases=["天气", "wq"])
         async def weather_handler(event: AstrMessageEvent):
             message_str = event.message_str.strip()
             parts = message_str.split(maxsplit=1)
